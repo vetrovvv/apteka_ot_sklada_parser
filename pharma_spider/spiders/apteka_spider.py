@@ -76,8 +76,11 @@ class PharmaSpider(scrapy.Spider):
         self.driver.quit()
 
     def parse(self, response):
-
-        self.driver.get(response.url)
+        try:
+            self.driver.get(response.url)
+        except TimeoutException:
+            self.driver.refresh()
+            
         number_products_in_category = self.driver.find_element(By.CSS_SELECTOR,
                                                                "div[class='page-header__description']").text
         counter = int(count_items(
