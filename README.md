@@ -22,7 +22,7 @@ start_urls = [
 we can add to this list any categories urls in this site
 
 
-You can add any proxies in settings to ROTATING_PROXY_LIST
+You can add any proxies in settings to ROTATING_PROXY_LIST,in repository now is only 1 free proxie,change it for stability work
 
 after "scrapy runspider apteka_spider.py" a result.json file will be created
 Example of 1 parsed page information:
