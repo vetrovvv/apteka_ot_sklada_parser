@@ -13,7 +13,7 @@ SPIDER_MODULES = ["pharma_spider.spiders"]
 NEWSPIDER_MODULE = "pharma_spider.spiders"
 
 ROTATING_PROXY_LIST = [
-    '89.187.179.163:8443',  # we can add any proxy to list
+    '4ii7GvKW:GcizDZuK@46.150.251.18:62734',  # we can add any proxy to list
 
 ]
 
